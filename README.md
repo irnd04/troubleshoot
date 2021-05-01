@@ -1,9 +1,9 @@
 
-`https://docs.oracle.com/en/java/javase/11/troubleshoot/index.html`
-`https://geekflare.com/important-jvm-options/`
-`https://www.oracle.com/java/technologies/javase/vmoptions-jsp.html`
-`https://fastthread.io/`
-`https://www.eclipse.org/mat/`
+https://docs.oracle.com/en/java/javase/11/troubleshoot/index.html
+https://geekflare.com/important-jvm-options/
+https://www.oracle.com/java/technologies/javase/vmoptions-jsp.html
+https://fastthread.io/
+https://www.eclipse.org/mat/
 
 ## Thread Dump을 뜰때 추가적인 정보들도 같이 요청할 수 있다.
 ### -XX:+PrintConcurrentLocks 
