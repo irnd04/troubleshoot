@@ -39,3 +39,7 @@
 
 ## 인코딩
 `-Dfile.encoding=UTF-8`
+
+## gc logging
+es : `-Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m`
+`-Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:time,level,pid,tags:filecount=32,filesize=64m`
