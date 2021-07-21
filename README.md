@@ -22,7 +22,8 @@
 `-XX:ErrorFile="{scriptFile경로}"`
 
 ## Heap Dump 뜨기
-`jmap -dump:format=b,file=heapdump.bin pid`
+`jmap -dump:format=b,file=heapdump.hprof pid`
+`jmap -dump:live,format=b,file=heapdump.hprof pid` 뜨기전 풀 GC
 
 ## Core Dump 뜨기
 `gcore -o heap.bin.core pid`
