@@ -44,3 +44,16 @@
 ## gc logging
 es : `-Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m`<br/>
 `-Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:time,level,pid,tags:filecount=32,filesize=64m`
+
+## code cache 최대 크기 지정
+`-XX:ReservedCodeCacheSize=32m`
+
+## code cache flusing (default: true)
+`문서에는 default 가 false라고 되어있지만 PrintCodeCacheOnCompilation해당 옵션으로 테스트해본결과 true임을 알 수 있다.`
+`-XX:-UseCodeCacheFlushing`
+
+## 종료시 code cache 정보 출력 (default: false)
+`XX:+PrintCodeCache`
+
+##  compile 마다 code cache 정보 출력
+`-XX:+PrintCodeCacheOnCompilation`
