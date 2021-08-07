@@ -49,7 +49,7 @@ es : `-Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecou
 `-XX:ReservedCodeCacheSize=32m`
 
 ## code cache flusing (default: true)
-`문서에는 default 가 false라고 되어있지만 PrintCodeCacheOnCompilation해당 옵션으로 테스트해본결과 true임을 알 수 있다.`
+`문서에는 default 가 false라고 되어있지만 PrintCodeCacheOnCompilation해당 옵션으로 테스트해본결과 true임을 알 수 있다.`<br/>
 `-XX:-UseCodeCacheFlushing`
 
 ## 종료시 code cache 정보 출력 (default: false)
