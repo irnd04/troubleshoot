@@ -45,6 +45,9 @@
 es : `-Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:utctime,pid,tags:filecount=32,filesize=64m`<br/>
 `-Xlog:gc*,gc+age=trace,safepoint:file=logs/gc.log:time,level,pid,tags:filecount=32,filesize=64m`
 
+## jit 컴파일 로깅
+`-XX:+PrintCompilation`
+
 ## code cache 최대 크기 지정
 `-XX:ReservedCodeCacheSize=32m`
 
