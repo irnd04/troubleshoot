@@ -33,7 +33,8 @@
 `jmap 옵션 자바실행파일위치 코어덤프위치`
 
 ## 에러 발생시 Heap Dump 생성
-`-XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=경로(파일명아님)`
+`-XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=heap-$(date +%Y%m%d%H%M%S).hprof`
+`-XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath={경로}` 경로로 주면 자동으로 hprof 가 생성되나 추천하는 방식은 아님
 
 ## 메모리 지정
 `-Xms128m -Xmx128m`
